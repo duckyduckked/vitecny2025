@@ -5,6 +5,7 @@ import UserInputs from "./components/UserInputs.jsx";
 import "./App.css";
 import zodiacFortunes from "./assets/zodiacfortunes.jsx";
 import companyLogo from "./assets/images/companyLogo.png";
+import companyLogoDark from "./assets/images/companyLogoDark.svg";
 import { FaEnvelope, FaWhatsapp, FaGlobe, FaCopy } from "react-icons/fa";
 import {
   EmailShareButton,
@@ -152,8 +153,15 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
 
   return (
     <div className="app-container">
+      <img
+        src={companyLogoDark}
+        alt="Nimbus Homes Logo"
+        className="footer-logo"
+        style={{ width: "10em" }}
+      />
       <h1 className="chinese-new-year-text">
-        Nimbus Homes Lucky Numbers Generator 2025
+        Lunar New Year 2025 <br />
+        Lucky Zodiac Numbers
       </h1>
 
       <div className="introduction-text-container">
