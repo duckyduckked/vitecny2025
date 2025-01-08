@@ -42,6 +42,7 @@ body {
   border-radius: 5px; /* Consistent border radius */
   border: 1px solid #d32f2f; /* Red border */
   background-color: #ffeba4; /* Soft goldish background */
+  color: #555;
 }
 
 /* Focus state for form controls */
