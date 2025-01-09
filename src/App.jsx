@@ -209,17 +209,10 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
               src={zodiacImages[zodiacAnimal.toLowerCase()]}
               alt={`${zodiacAnimal} Zodiac`}
               className="zodiac-image"
-              style={{ width: "60%", height: "auto", borderRadius: "10px" }}
+              style={{ width: "80%", height: "auto", borderRadius: "10px" }}
               ref={luckyNumbersContainerRef}
             />
           )}
-          <div className="lucky-numbers-container">
-            {luckyNumbers.map((number, index) => (
-              <div key={index} className="lucky-ball">
-                <span>{number}</span>
-              </div>
-            ))}
-          </div>
           <p>
             <span>
               <a
@@ -235,6 +228,14 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
             {loremIpsumText}
           </p>
           <br />
+          <b style={{ fontSize: "1.5em" }}>Lucky Numbers:</b>
+          <div className="lucky-numbers-container">
+            {luckyNumbers.map((number, index) => (
+              <div key={index} className="lucky-ball">
+                <span>{number}</span>
+              </div>
+            ))}
+          </div>
           <br />
           <p>
             <strong>
@@ -287,8 +288,10 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
               )}
             </div>
           </div>
-          Hint: If their lucky numbers win the TOTO draw, ask them to give you a
-          cut 😉
+          <b>
+            If their lucky numbers win the TOTO draw, ask them to give you a cut
+            😉
+          </b>
         </div>
       )}
 
