@@ -240,6 +240,8 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
           </p>
           <br />
           <b style={{ fontSize: "1.3em" }}>Lucky TOTO Numbers:</b>
+          <br />
+          <span>(System 7)</span>
           <div className="lucky-numbers-container">
             {luckyNumbers.map((number, index) => (
               <div key={index} className="lucky-ball">
