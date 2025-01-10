@@ -35,7 +35,7 @@ function UserInputs({
       </Form.Group>
 
       <Form.Group controlId="formLastName" class="formQuestion">
-        <Form.Label>What is your last name?</Form.Label>
+        <Form.Label>What is your surname?</Form.Label>
         <br />
         <Form.Control
           type="text"

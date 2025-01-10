@@ -68,7 +68,7 @@ function App() {
   const handleCopyText = () => {
     navigator.clipboard
       .writeText(
-        `I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too so we can buy TOTO together! \n\nHere's the website: ${window.location.href}`
+        `I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too! \n\nHere's the website: ${window.location.href}`
       )
       .then(() => {
         setCopySuccess(true);
@@ -97,15 +97,15 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
 
     // Validate lastName
     if (!lastName.trim()) {
-      alert("Last name must be at least 1 character long.");
+      alert("surname must be at least 1 character long.");
       return;
     }
     if (lastName.length > 40) {
-      alert("Last name cannot exceed 40 characters.");
+      alert("surname cannot exceed 40 characters.");
       return;
     }
     if (!/^[a-zA-Z\s]+$/.test(lastName)) {
-      alert("Last name can only contain alphabets and spaces.");
+      alert("surname can only contain alphabets and spaces.");
       return;
     }
 
@@ -144,7 +144,7 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
     setFourDNumbers(secondNumbers);
     setLuckyNumbers(numbers);
     setShowLoremIpsum(true);
-    setStage(1);
+    setStage(2);
     setLoremIpsumText(zodiacFortunes[zodiacAnimal.toLowerCase()]);
 
     setTimeout(() => {
@@ -172,25 +172,25 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
       />
       <h1 className="chinese-new-year-text">
         Lunar New Year 2025 <br />
-        Lucky Zodiac Numbers
+        Zodiac Fortune Numbers
       </h1>
 
       <div className="introduction-text-container">
         <p className="introduction-text">
           Wishing you a wonderful start to Year of the Wood Snake! <br />
           To kick off the year with some fun and excitement, we've created a
-          special lucky number generator to inspire your TOTO lucky draw picks.
+          special lucky number generator to generate your Zodiac Fortune
+          Numbers!
           <br />
           <br />
           The numbers are uniquely generated and take into account your first
-          name, last name, birth year, zodiac animal, and home cleaning
+          name, surname, birth year, zodiac animal, and home cleaning
           regularity.
           <br />
           <b>(Did you know that a clean home invites wealth and prosperity?)</b>
           <br />
           <br />
-          Go ahead and get your lucky numbers for 2025 now! <br />
-          <b>HUAT AH!</b>
+          Go ahead and get your fortune numbers for 2025 now! <br />
           <br />
         </p>
       </div>
@@ -209,7 +209,7 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
         setZodiacAnimal={setZodiacAnimal}
       />
       <Button onClick={handleGenerateLuckyNumbers} id="luckyButton">
-        Get Your Lucky Numbers!
+        Get Your Fortune Numbers!
       </Button>
 
       {showLoremIpsum && (
@@ -239,9 +239,8 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
             {loremIpsumText}
           </p>
           <br />
-          <b style={{ fontSize: "1.3em" }}>Lucky TOTO Numbers:</b>
+          <b style={{ fontSize: "1.3em" }}>Fortune Numbers:</b>
           <br />
-          <span>(System 7)</span>
           <div className="lucky-numbers-container">
             {luckyNumbers.map((number, index) => (
               <div key={index} className="lucky-ball">
@@ -249,21 +248,24 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
               </div>
             ))}
           </div>
-          <b style={{ fontSize: "1.3em" }}>Lucky 4D Number:</b>
+          <b style={{ fontSize: "1.3em" }}>Luckiest Number:</b>
           <br />
           <div className="fourd-number-box">{fourDNumbers}</div>
           <br />
           <p>
-            <br />
-            <br />
+            <p style={{ fontSize: "1em" }}>
+              This generator is created for entertainment purposes only. <br />
+              {/* It does not encourage gambling nor guarantee any winnings. Please
+            gamble responsibly. */}
+            </p>
             <strong>
               Share your results and get your friends to try it out
             </strong>
           </p>
           <div className="social-share-icons">
             <EmailShareButton
-              subject={`Lucky TOTO number generator from Nimbus Homes`}
-              body={`I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too so we can buy TOTO together! \n\nHere's the website:`}
+              subject={`2025 Fortune number generator from Nimbus Homes`}
+              body={`I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too! \n\nHere's the website:`}
               url={`${window.location.href}`}
             >
               <EmailIcon size={42} round={true} />
@@ -274,14 +276,14 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
             </FacebookShareButton>
 
             <TelegramShareButton
-              title={`I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too so we can buy TOTO together!`}
+              title={`I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too!`}
               url={window.location.href}
             >
               <TelegramIcon size={42} round={true} />
             </TelegramShareButton>
 
             <WhatsappShareButton
-              title={`I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too so we can buy TOTO together!`}
+              title={`I got my Zodiac fortune told by Nimbus Homes, here it is: \n \n${loremIpsumText}. \n \nGet yours done and generate your lucky numbers too!`}
               url={window.location.href}
             >
               <WhatsappIcon size={42} round={true} />
@@ -306,16 +308,6 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
               )}
             </div>
           </div>
-          <b>
-            If their lucky numbers win the TOTO draw, ask them to give you a cut
-            😉
-          </b>
-          <br />
-          <p style={{ fontSize: "0.9em" }}>
-            This generator is for entertainment purposes only. <br />
-            It does not encourage gambling nor guarantee any winnings. Please
-            gamble responsibly.
-          </p>
         </div>
       )}
 

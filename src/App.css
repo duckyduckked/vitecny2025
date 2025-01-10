@@ -73,11 +73,11 @@ body {
 
 /* Button styles */
 button {
-  background-color: #d32f2f; /* Red button */
+  background-color: #ad1313; /* Red button */
   border-color: #d32f2f; /* Red border for button */
   color: white;
   font-weight: bold;
-  border-radius: 5px;
+  border-radius: 50px;
   padding: 12px 24px; /* Slightly larger padding */
   font-size: 1.1rem;
   transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
@@ -104,9 +104,9 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #06314c; /* Gold color for the ball */
+  background-color: #ad1313; /* Gold color for the ball */
   font-size: 1rem;
-  color: rgb(255, 169, 93);
+  color: #ffdfa3;
   font-weight: bold;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   width: 4em;
@@ -303,7 +303,7 @@ select:hover {
 }
 
 .fourd-number-box {
-  background-color: #e82424; /* Light gray background */
+  background-color: #ad1313; /* Light gray background */
   color: #ffdfa3; /* Dark text */
   font-size: 2em; /* Slightly larger font for emphasis */
   font-weight: bold;
