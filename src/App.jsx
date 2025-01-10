@@ -310,6 +310,12 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
             If their lucky numbers win the TOTO draw, ask them to give you a cut
             😉
           </b>
+          <br />
+          <p style={{ fontSize: "0.9em" }}>
+            This generator is for entertainment purposes only. <br />
+            It does not encourage gambling nor guarantee any winnings. Please
+            gamble responsibly.
+          </p>
         </div>
       )}
 
