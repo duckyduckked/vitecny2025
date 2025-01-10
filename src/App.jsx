@@ -254,6 +254,8 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
           <div className="fourd-number-box">{fourDNumbers}</div>
           <br />
           <p>
+            <br />
+            <br />
             <strong>
               Share your results and get your friends to try it out
             </strong>

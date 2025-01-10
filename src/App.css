@@ -265,6 +265,7 @@ select:hover {
   display: flex;
   justify-content: center; /* Align items to the center */
   gap: 15px; /* Space between the icons */
+  margin-top: -1.5em;
 }
 
 .social-share-icons button {
