@@ -1,6 +1,7 @@
 import React, { useState, useRef } from "react";
 import { Button } from "react-bootstrap";
 import { generateLuckyNumbers } from "./utils/luckyNumberUtils.jsx";
+import { generate4DNumbers } from "./utils/4dNumbers.jsx";
 import UserInputs from "./components/UserInputs.jsx";
 import "./App.css";
 import zodiacFortunes from "./assets/zodiacfortunes.jsx";
@@ -41,6 +42,7 @@ function App() {
   const [birthYear, setBirthYear] = useState("");
   const [homeCleaning, setHomeCleaning] = useState("");
   const [luckyNumbers, setLuckyNumbers] = useState([]);
+  const [fourDNumbers, setFourDNumbers] = useState([]);
   const [showLoremIpsum, setShowLoremIpsum] = useState(false);
   const [stage, setStage] = useState(1);
   const [zodiacAnimal, setZodiacAnimal] = useState("");
@@ -131,9 +133,18 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
       homeCleaning,
       zodiacAnimal
     );
+    const secondNumbers = generate4DNumbers(
+      alphabet,
+      lastName,
+      birthYear,
+      homeCleaning,
+      zodiacAnimal
+    );
+
+    setFourDNumbers(secondNumbers);
     setLuckyNumbers(numbers);
     setShowLoremIpsum(true);
-    setStage(2);
+    setStage(1);
     setLoremIpsumText(zodiacFortunes[zodiacAnimal.toLowerCase()]);
 
     setTimeout(() => {
@@ -228,7 +239,7 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
             {loremIpsumText}
           </p>
           <br />
-          <b style={{ fontSize: "1.5em" }}>Lucky Numbers:</b>
+          <b style={{ fontSize: "1.3em" }}>Lucky TOTO Numbers:</b>
           <div className="lucky-numbers-container">
             {luckyNumbers.map((number, index) => (
               <div key={index} className="lucky-ball">
@@ -236,6 +247,9 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
               </div>
             ))}
           </div>
+          <b style={{ fontSize: "1.3em" }}>Lucky 4D Number:</b>
+          <br />
+          <div className="fourd-number-box">{fourDNumbers}</div>
           <br />
           <p>
             <strong>

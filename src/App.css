@@ -95,6 +95,7 @@ button:hover {
   justify-content: center; /* Center the lucky numbers horizontally */
   gap: 15px; /* Space between the balls */
   margin-top: 20px;
+  margin-bottom: 2em;
   flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
@@ -298,4 +299,17 @@ select:hover {
 
 .copy-button:hover {
   opacity: 0.8;
+}
+
+.fourd-number-box {
+  background-color: #e82424; /* Light gray background */
+  color: #ffdfa3; /* Dark text */
+  font-size: 2em; /* Slightly larger font for emphasis */
+  font-weight: bold;
+  padding: 0.5em 2.5em; /* Adjust padding as needed */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: center; /* Center the text */
+  margin: 10px auto; /* Center the box horizontally with some margin */
+  display: inline-block; /* Shrink-wrap the box around the number */
 }
