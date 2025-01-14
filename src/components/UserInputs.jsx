@@ -87,7 +87,7 @@ function UserInputs({
       </Form.Group>
 
       <Form.Group controlId="formCleaningFrequency" class="formQuestion">
-        <Form.Label>How regularly do you clean your home?</Form.Label>
+        <Form.Label>How often do you engage Nimbus Homes?</Form.Label>
         <br />
         <Form.Control
           as="select"
@@ -95,13 +95,13 @@ function UserInputs({
           onChange={(e) => setHomeCleaning(e.target.value)}
         >
           <option value="">Select an option</option>
-          <option value="everyday">Every day</option>
-          <option value="every-other-day">Every other day</option>
-          <option value="once-a-week">Once a week</option>
-          <option value="once-every-2-weeks">Once every 2 weeks</option>
-          <option value="once-a-month">Once a month</option>
+          <option value="everyday">Everyday / every few days</option>
+          <option value="every-other-day">On a weekly basis</option>
+          <option value="once-a-week">Once every 2 weeks</option>
+          <option value="once-every-2-weeks">On a monthly basis</option>
+          <option value="once-a-month">Once in a while</option>
           <option value="no-regular-cleaning">
-            No regular cleaning, only adhoc deep/spring cleaning once in a while
+            Never engaged Nimbus Homes before
           </option>
         </Form.Control>
       </Form.Group>
