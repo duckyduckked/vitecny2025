@@ -177,7 +177,7 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
 
       <div className="introduction-text-container">
         <p className="introduction-text">
-          Wishing you a wonderful start to Year of the Wood Snake! <br />
+          Wishing you a wonderful start to the Year of the Wood Snake! <br />
           To kick off the year with some fun and excitement, we've created a
           special lucky number generator to generate your Zodiac Fortune
           Numbers!
