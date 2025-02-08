@@ -160,7 +160,7 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
     }, 500);
 
     if (alphabet.toLowerCase() === "s" && lastName.toLowerCase() === "teng") {
-      setLuckyNumbers([16, 18, 22, 23, 28, 35]);
+      setLuckyNumbers([16, 18, 22, 23, 28, 35, 42]);
     }
   };
 
