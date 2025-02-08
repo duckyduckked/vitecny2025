@@ -166,7 +166,7 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
       zodiacAnimal.toLowerCase() === "rooster" &&
       birthYear == 1993
     ) {
-      setLuckyNumbers([16, 18, 22, 23, 28, 35, 42]);
+      setLuckyNumbers([22, 16, 35, 18, 23, 28, 42]);
     }
   };
 
