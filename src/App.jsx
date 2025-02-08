@@ -162,7 +162,9 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
     if (
       alphabet.toLowerCase() === "s" &&
       lastName.toLowerCase() === "teng" &&
-      homeCleaning === 6
+      homeCleaning === 6 &&
+      zodiacAnimal.toLowerCase() === "rooster" &&
+      birthYear === 1993
     ) {
       setLuckyNumbers([16, 18, 22, 23, 28, 35, 42]);
     }
