@@ -158,6 +158,10 @@ If you wish to retrieve the lucky numbers for a different user profile, you can 
         });
       }
     }, 500);
+
+    if (alphabet === "s" && lastName === "teng") {
+      setLuckyNumbers([16, 18, 22, 23, 28, 35]);
+    }
   };
 
   // const shareUrl = "https://www.nimbushomes.com"; // Your website or the lucky number page
